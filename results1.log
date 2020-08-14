@@ -1,0 +1,80 @@
+---------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts1.log
+  log type:  text
+ opened on:  12 Aug 2020, 15:32:57
+
+. 
+. *** "Migranten kosten mehr als sie beitragen" (imbleco)
+. * WEIGHTED
+. tab imsmrgt2 [aweight=pspwght] if ctzcntr == 1
+
+      Migranten |
+    sollten die |
+gleichen Rechte |
+ haben wie alle |
+        anderen |
+      (imsmrgt) |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu | 658.357464       24.82       24.82
+        Neutral | 497.658969       18.76       43.57
+      Stimme zu | 1,496.9836       56.43      100.00
+----------------+-----------------------------------
+          Total |      2,653      100.00
+
+. tab imsmrgt2 [aweight=pspwght] if mig == 0
+
+      Migranten |
+    sollten die |
+gleichen Rechte |
+ haben wie alle |
+        anderen |
+      (imsmrgt) |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu | 600.470542       25.34       25.34
+        Neutral | 455.620269       19.22       44.56
+      Stimme zu | 1,313.9092       55.44      100.00
+----------------+-----------------------------------
+          Total |      2,370      100.00
+
+. 
+. * UNWEIGHTED
+. tab imsmrgt2 if ctzcntr == 1
+
+      Migranten |
+    sollten die |
+gleichen Rechte |
+ haben wie alle |
+        anderen |
+      (imsmrgt) |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu |        607       22.88       22.88
+        Neutral |        510       19.22       42.10
+      Stimme zu |      1,536       57.90      100.00
+----------------+-----------------------------------
+          Total |      2,653      100.00
+
+. tab imsmrgt2 if mig == 0
+
+      Migranten |
+    sollten die |
+gleichen Rechte |
+ haben wie alle |
+        anderen |
+      (imsmrgt) |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu |        546       23.04       23.04
+        Neutral |        464       19.58       42.62
+      Stimme zu |      1,360       57.38      100.00
+----------------+-----------------------------------
+          Total |      2,370      100.00
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts1.log
+  log type:  text
+ closed on:  12 Aug 2020, 15:32:57
+---------------------------------------------------------------------------------------

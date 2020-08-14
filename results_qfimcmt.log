@@ -1,0 +1,131 @@
+---------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts_qfimcmt.log
+  log type:  text
+ opened on:  13 Aug 2020, 16:17:56
+
+. *** "Wichtig, dass sich Migranten dem deutschen Lebensstil anpassen (qfimcmt)"
+. * WEIGHTED
+. tab qfimcmt2 essround [aweight=pspwght] if ctzcntr == 1, col
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+  Wichtig, dass |
+ sich Migranten |
+  dem deutschen |
+     Lebensstil |
+       anpassen |       ESS round
+      (qfimcmt) |         1          7 |     Total
+----------------+----------------------+----------
+Stimme nicht zu | 220.93564  193.76272 | 414.69835 
+                |      8.13       7.03 |      7.58 
+----------------+----------------------+----------
+        Neutral | 206.18798   229.0756 |435.263588 
+                |      7.59       8.31 |      7.96 
+----------------+----------------------+----------
+      Stimme zu | 2,288.795  2,332.243 | 4,621.038 
+                |     84.27      84.65 |     84.46 
+----------------+----------------------+----------
+          Total | 2,715.919  2,755.081 |     5,471 
+                |    100.00     100.00 |    100.00 
+
+. tab qfimcmt2 essround [aweight=pspwght] if mig == 0, col
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+  Wichtig, dass |
+ sich Migranten |
+  dem deutschen |
+     Lebensstil |
+       anpassen |       ESS round
+      (qfimcmt) |         1          7 |     Total
+----------------+----------------------+----------
+Stimme nicht zu | 199.47339  153.93854 | 353.41194 
+                |      8.19       6.61 |      7.42 
+----------------+----------------------+----------
+        Neutral |  180.6022  196.82534 | 377.42754 
+                |      7.41       8.46 |      7.92 
+----------------+----------------------+----------
+      Stimme zu | 2,056.488  1,976.672 | 4,033.161 
+                |     84.40      84.93 |     84.66 
+----------------+----------------------+----------
+          Total | 2,436.564  2,327.436 |     4,764 
+                |    100.00     100.00 |    100.00 
+
+. 
+. * UNWEIGHTED
+. tab qfimcmt2 essround if ctzcntr == 1, col
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+  Wichtig, dass |
+ sich Migranten |
+  dem deutschen |
+     Lebensstil |
+       anpassen |       ESS round
+      (qfimcmt) |         1          7 |     Total
+----------------+----------------------+----------
+Stimme nicht zu |       220        203 |       423 
+                |      8.20       7.28 |      7.73 
+----------------+----------------------+----------
+        Neutral |       212        232 |       444 
+                |      7.90       8.32 |      8.12 
+----------------+----------------------+----------
+      Stimme zu |     2,251      2,353 |     4,604 
+                |     83.90      84.40 |     84.15 
+----------------+----------------------+----------
+          Total |     2,683      2,788 |     5,471 
+                |    100.00     100.00 |    100.00 
+
+. tab qfimcmt2 essround if mig == 0, col
+
++-------------------+
+| Key               |
+|-------------------|
+|     frequency     |
+| column percentage |
++-------------------+
+
+  Wichtig, dass |
+ sich Migranten |
+  dem deutschen |
+     Lebensstil |
+       anpassen |       ESS round
+      (qfimcmt) |         1          7 |     Total
+----------------+----------------------+----------
+Stimme nicht zu |       194        166 |       360 
+                |      8.09       7.02 |      7.56 
+----------------+----------------------+----------
+        Neutral |       184        198 |       382 
+                |      7.67       8.37 |      8.02 
+----------------+----------------------+----------
+      Stimme zu |     2,020      2,002 |     4,022 
+                |     84.24      84.62 |     84.42 
+----------------+----------------------+----------
+          Total |     2,398      2,366 |     4,764 
+                |    100.00     100.00 |    100.00 
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts_qfimcmt.log
+  log type:  text
+ closed on:  13 Aug 2020, 16:17:56
+---------------------------------------------------------------------------------------

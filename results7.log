@@ -1,0 +1,60 @@
+---------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts7.log
+  log type:  text
+ opened on:  12 Aug 2020, 15:33:52
+
+. 
+. *** "Migranten kosten mehr als sie beitragen" (imbleco)
+. * WEIGHTED
+. tab almuslv2 [aweight=pspwght] if ctzcntr == 1
+
+Muslime sollten nach Deutschland |
+    einwandern duerfen (almuslv) |      Freq.     Percent        Cum.
+---------------------------------+-----------------------------------
+Stimme nicht zu (wenige / keine) | 874.849279       31.93       31.93
+      Stimme zu (einige / viele) | 1,865.1507       68.07      100.00
+---------------------------------+-----------------------------------
+                           Total |      2,740      100.00
+
+. tab almuslv2 [aweight=pspwght] if mig == 0
+
+Muslime sollten nach Deutschland |
+    einwandern duerfen (almuslv) |      Freq.     Percent        Cum.
+---------------------------------+-----------------------------------
+Stimme nicht zu (wenige / keine) | 749.728856       32.19       32.19
+      Stimme zu (einige / viele) | 1,579.2711       67.81      100.00
+---------------------------------+-----------------------------------
+                           Total |      2,329      100.00
+
+. 
+. * UNWEIGHTED
+. tab almuslv2 if ctzcntr == 1
+
+Muslime sollten nach Deutschland |
+    einwandern duerfen (almuslv) |      Freq.     Percent        Cum.
+---------------------------------+-----------------------------------
+Stimme nicht zu (wenige / keine) |        873       31.86       31.86
+      Stimme zu (einige / viele) |      1,867       68.14      100.00
+---------------------------------+-----------------------------------
+                           Total |      2,740      100.00
+
+. tab almuslv2 if mig == 0
+
+Muslime sollten nach Deutschland |
+    einwandern duerfen (almuslv) |      Freq.     Percent        Cum.
+---------------------------------+-----------------------------------
+Stimme nicht zu (wenige / keine) |        748       32.12       32.12
+      Stimme zu (einige / viele) |      1,581       67.88      100.00
+---------------------------------+-----------------------------------
+                           Total |      2,329      100.00
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts7.log
+  log type:  text
+ closed on:  12 Aug 2020, 15:33:52
+---------------------------------------------------------------------------------------

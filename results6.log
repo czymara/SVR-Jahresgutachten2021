@@ -1,0 +1,84 @@
+---------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts6.log
+  log type:  text
+ opened on:  12 Aug 2020, 15:33:43
+
+. 
+. *** "Migranten kosten mehr als sie beitragen" (imbleco)
+. * WEIGHTED
+. tab imvtctz2 [aweight=pspwght] if ctzcntr == 1
+
+Es ist wichtig, |
+ dass Migranten |
+      Wahlrecht |
+bekommen sobald |
+            sie |
+Staatsbuergersc |
+           haft |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu | 184.893336        6.89        6.89
+        Neutral |  179.42723        6.68       13.57
+      Stimme zu | 2,320.6794       86.43      100.00
+----------------+-----------------------------------
+          Total |      2,685      100.00
+
+. tab imvtctz2 [aweight=pspwght] if mig == 0
+
+Es ist wichtig, |
+ dass Migranten |
+      Wahlrecht |
+bekommen sobald |
+            sie |
+Staatsbuergersc |
+           haft |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu | 149.397277        6.61        6.61
+        Neutral | 159.354586        7.05       13.67
+      Stimme zu | 1,950.2481       86.33      100.00
+----------------+-----------------------------------
+          Total |      2,259      100.00
+
+. 
+. * UNWEIGHTED
+. tab imvtctz2 if ctzcntr == 1
+
+Es ist wichtig, |
+ dass Migranten |
+      Wahlrecht |
+bekommen sobald |
+            sie |
+Staatsbuergersc |
+           haft |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu |        185        6.89        6.89
+        Neutral |        179        6.67       13.56
+      Stimme zu |      2,321       86.44      100.00
+----------------+-----------------------------------
+          Total |      2,685      100.00
+
+. tab imvtctz2 if mig == 0
+
+Es ist wichtig, |
+ dass Migranten |
+      Wahlrecht |
+bekommen sobald |
+            sie |
+Staatsbuergersc |
+           haft |      Freq.     Percent        Cum.
+----------------+-----------------------------------
+Stimme nicht zu |        149        6.60        6.60
+        Neutral |        156        6.91       13.50
+      Stimme zu |      1,954       86.50      100.00
+----------------+-----------------------------------
+          Total |      2,259      100.00
+
+. 
+. log close
+      name:  <unnamed>
+       log:  C:\Users\czymara.local\PowerFolders\projects\SVR-Jahresgutachten 2021\resu
+> lts6.log
+  log type:  text
+ closed on:  12 Aug 2020, 15:33:43
+---------------------------------------------------------------------------------------
