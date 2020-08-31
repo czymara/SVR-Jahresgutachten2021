@@ -18,7 +18,7 @@ drop if agea < 18
 gen mig = .
 label var mig "Migrationshintergrund"
 replace mig=0 if brncntr==1 & mocntr==1 & facntr==1 // respondent, mother and father born in country
-replace mig=1 if brncntr==2 | (brncntr==1 & (mocntr==2 | facntr==2))
+replace mig=1 if brncntr==2 | mocntr==2 | facntr==2
 label define ynlbl 0 "Nein" 1 "Ja"
 label values mig ynlbl
 
